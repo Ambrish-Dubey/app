@@ -1,0 +1,42 @@
+**. ------------------------------------------------ get() method --------------------------------------------- .**
+
+**BASIC NATURE:- RETURNS A QUERYSET OBJECT**
+
+object = Model.objects.get(Models_variable_name = condition)  ==> queryset Object
+
+CASES:- 
+1. Single Match: If exactly one record matches the query, get() will return that single object.
+2. No Match: If no records match the query, get() will raise a DoesNotExist exception.
+3. Multiple Matches: If more than one record matches the query, get() will raise a MultipleObjectsReturned exception.
+
+**. ---------------------------------------------  filter() method ------------------------------------------ .** 
+
+**BASIC NATURE:- Filters and RETURNS A LIST OF DIFFERENT objects**
+
+list = MODEL.objects.filter(Models_variable_name = condition)
+
+CASES:- 
+
+1. Single Match: If exactly one record matches the query, the queryset will contain that single object.
+2. Multiple Matches: If multiple records match the query, the queryset will contain all those objects.
+3. No Match: If no records match the query, the queryset will be empty.
+
+
+**. ----------------------------------------------objects.get.all()------------------------------------------- .**
+
+**BASIC NATURE:- RETURNS ALL THE  OBJECTS**
+
+list = MODEL.objects.get.all()
+
+CASES:-
+1. ANY MATCH:- returns all the db objects registered in the MODEL.
+2. No Match:- returns Empty object
+
+**.-------------------------------------------------authenticate()-----------------------------------------------.**
+
+**BASIC NATURE:- RETURNS ONE MATCHED OBJECT**
+
+object = authenticate(Models_variable_name = condition,Models_variable_name = condition )
+CASES:-
+1. Any Match:- returns an object if the filter conditions are matched in the backend
+2. No Match:-returns a None object if the filters dont match

@@ -1,0 +1,6 @@
+if we go to any website we use get method by default.
+like:- /name_of_urlpattern/
+All dict objects are blank i.e GET and POST dictionaries.
+hence when we enter any site, 
+    The request obj :- /name_of_urlpattern/
+    The GET and POST dicts:- Empty

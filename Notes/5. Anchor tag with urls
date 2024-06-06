@@ -1,0 +1,9 @@
+if a template has an anchor tag with {% url 'name'  %} then it will append it to the current pages url.
+
+for example:-
+
+url = https://123.00.93:8000 [The page currently we're in]
+
+<a href="{% url 'login' %}">Click here to Login
+
+Now if we click on the anchor tag it will send us to:- https://123.00.93:8000/login
